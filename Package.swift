@@ -7,13 +7,13 @@ let package = Package(
     name: "scipio-testing",
     products: [
         .library(
-            name: "scipio-testing",
-            targets: ["scipio-testing"]),
+            name: "ScipioTesting",
+            targets: ["ScipioTesting"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "scipio-testing",
+            name: "ScipioTesting",
             dependencies: []),
     ]
 )
