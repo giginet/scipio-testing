@@ -7,19 +7,23 @@ let package = Package(
     name: "scipio-testing",
     platforms: [
         .iOS(.v11),
-        .macOS(.v10_13),
-        .watchOS(.v4),
-        .tvOS(.v11),
     ],
     products: [
         .library(
             name: "ScipioTesting",
             targets: ["ScipioTesting"]),
+        .library(
+            name: "SomeBinary",
+            targets: ["SomeBinary"]),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "ScipioTesting",
             dependencies: []),
+        .binaryTarget(
+            name: "SomeBinary",
+            path: "SomeBinary.zip"
+        )
     ]
 )
