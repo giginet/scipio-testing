@@ -7,6 +7,7 @@ let package = Package(
     name: "scipio-testing",
     platforms: [
         .iOS(.v11),
+        .watchOS(.v4),
     ],
     products: [
         .library(
